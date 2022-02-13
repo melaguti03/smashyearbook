@@ -1,0 +1,233 @@
+body{
+  background: gray;
+  margin: 0;
+  padding: 0;
+
+
+  
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: red;
+  color: white;
+
+}
+
+.navbar .fa-times{
+  display: none;
+}
+
+.navbar .fa-bars{
+  display: none;
+}
+
+@media(max-width: 700px){
+ 
+  .links ul li{
+      display: block;
+  }
+  .links{
+      position: fixed;
+      background: lightpink;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      z-index: 2;
+      transition: 1s;
+  }
+    .navbar .fa-times{
+      display: block;
+      color: #fff;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+
+  }
+   .navbar .fa-bars{
+      display: block;
+      color: #fff;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+
+  }
+
+  .links ul{
+      padding: 30px;
+          
+  }
+}
+
+.logo{
+  font-size: 1.5rem;
+  margin: .5rem;
+}
+
+.links ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.links li{
+  list-style: none;
+}
+
+.links li a{
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+}
+
+.links li:hover{
+  background-color: rgba(236, 223, 223, 0.836);
+}
+
+.container{
+
+  width: 100%;
+  height: auto;
+
+}
+
+
+
+
+.container .scholars{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.container .scholars .individualscholar{
+  width: 300px;
+  height: 300px;
+  margin: 5px;
+}
+
+
+.container .scholars .individualscholar img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+
+}
+.individualscholar .namequote{
+
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.5 ease-in-out;
+
+}
+
+.individualscholar .staffname{
+
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.5 ease-in-out;
+
+}
+
+.individualscholar:hover .namequote{
+  height: 300px;
+  opacity: 1;
+}
+
+
+.individualscholar:hover .staffname{
+  height: 300px;
+  opacity: 1;
+}
+
+.namequote p{
+
+  position: absolute;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  column-gap: 6px;
+  row-gap: 6px;
+  transform: translateY(-65px);
+  color:white;
+  font-size: 13px;
+  
+
+}
+
+
+.namequote h2{
+  position: absolute;
+  object-fit: cover;
+  color: aliceblue;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  column-gap: 6px;
+  row-gap: 6px;
+  transform: translateY(-100px);
+}
+
+.staffname h2{
+  position: absolute;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  column-gap: 6px;
+  row-gap: 6px;
+  transform: translateY(-65px);
+  color:white;
+  
+}
+
+.scholarsmemory{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.scholarmemory{
+  background-color: bisque;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  text-align: center;
+  margin: 5px;
+ 
+}
+
+.scholarmemory p{
+  transform: translateY(70px);
+}
+
+
+h1{
+  text-align: center;
+}
+
+
+
+
+
